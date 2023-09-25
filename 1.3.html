@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melbin - Portfolio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* ... (existing styles) ... */
+        
+        header {
+            background-color: #0078d4; /* Microsoft's primary color */
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        /* Adjustments for better readability and style */
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        
+        header p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        
+        nav {
+            background-color: #004578; /* Darker shade of the primary color */
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        /* ... (continue adjusting styles for other sections) ... */
+        
+        section {
+            padding: 40px;
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft box shadow for depth */
+        }
+        
+        section h2 {
+            font-size: 32px;
+            margin: 10px 0;
+            cursor: pointer;
+            color: #0078d4;
+        }
+        
+        section p {
+            font-size: 18px;
+            color: #333;
+        }
+        
+        section .project {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        
+        section .project h3 {
+            font-size: 24px;
+            margin: 10px 0;
+            color: #0078d4;
+        }
+        
+        section .project p {
+            font-size: 16px;
+            color: #333;
+        }
+        
+        /* ... (continue styling for other sections) ... */
+        
+        footer {
+            background-color: #f3f3f3;
+            color: #333;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #ccc;
+        }
+        
+        footer p {
+            font-size: 18px;
+            margin: 0;
+        }        
+
+        /* Rest of CSS styles */
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div>
+            <h1>Melbin Paul</h1>
+            <p>Web Developer | Creative Designer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about" onclick="toggleContent('about-content')">About</a></li>
+            <li><a href="#portfolio" onclick="toggleContent('portfolio-content')">Portfolio</a></li>
+            <li><a href="#skills" onclick="toggleContent('skills-content')">Skills</a></li>
+            <li><a href="#contact" onclick="toggleContent('contact-content')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div>
+            <h2>About Myself</h2>
+            <div id="about-content" style="display: none;">
+                <p>Hello, I'm Melbin Paul, an IT student at Deakin University. I am passionate about creating visually stunning and user-friendly websites by leveraging my strong expertise in front-end development and a keen eye for design.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div>
+            <h2>Portfolio</h2>
+            <div id="portfolio-content" style="display: none;">
+                <div class="project">
+                    <h3>Project 1: Task 1.1P - Creating an HTML Page Using CSS Styling and Integrating GitHub</h3>
+                    <p>This project entailed developing a visually appealing, user-friendly website with compelling storytelling, simple navigation, and excellent SEO to improve a fries shop's online presence and customer interaction.
+                    </p>
+                </div>
+                <div class="project">
+                    <h3>Project 2: Task 1.2P - Investigating Responsive Web Design and JavaScript Ideas
+                    </h3>
+                    <p>In this project, I used HTML and CSS to construct responsive web design, demonstrating its importance in online development. This method provides a consistent user experience, broadens audience reach, and is both cost-effective and future-proof.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div>
+            <h2>Skills</h2>
+            <div id="skills-content" style="display: none;">
+                <ul>
+                    <li>Front-End Programming</li>
+                    <li>User Interface (UI) </li>
+                    <li>Responsive Web Design</li>
+                    <li>Frameworks for Web Development</li>
+                    <li>Problem-Solving</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div>
+            <h2>Contact Me</h2>
+            <div id="contact-content" style="display: none;">
+                <p>"I am currently open to freelance opportunities and open to collaboration. Please feel free to reach out to discuss potential projects or collaborations."</p>
+                <ul>
+                    <li>Email: <a href="mailto:melbinpaul.kidangen@gmail.com">melbinpaul.kidangen@gmail.com</a></li>
+                    <li>Phone Number: <a href="tel:+61493781435">+61 493781435</a></li>
+                    <li>GitHub: <a href="https://github.com/melbinpaul123" target="_blank">GitHub Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>&copy; 2023 Melbin</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleContent(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
